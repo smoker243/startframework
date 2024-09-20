@@ -1,0 +1,11 @@
+.form-control:focus{
+    border-color: #dee;
+}
+
+.hb{
+    top:40px !important; 
+}
+
+label{
+    transition: all 0.6s;
+}

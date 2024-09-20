@@ -1,0 +1,41 @@
+<section class=" d-flex flex-column justify-content-around align-items-center ">
+
+    
+    <div class="text-center g-4">
+        <app-star [TitleStar]="' portfolio component '" [CustomColor]="'#2C3E50'"></app-star>
+    </div>
+
+
+    <div class="container">
+        
+
+    <div class="row g-4">
+
+        
+    @for (src of portfolioSrc; track $index) {
+
+        <div class="col-lg-4 col-md-6">
+
+
+            <div class="Modric position-relative overflow-hidden">
+                <img [src]="src" class="w-100 rounded-3" alt="poert">
+        
+                <div (click)="flag=false ; Ms11Img = src " 
+                class="Isko position-absolute bg-sec start-0 top-0 d-flex justify-content-center align-items-center w-100 h-100">
+                    
+                    <i class="fa-solid fa-plus fa-6x text-white"></i>
+                </div>
+            </div>
+        
+        </div>
+        
+    }
+    </div>
+    </div>
+
+
+</section>
+
+<div (click)="hightMS11($event.target, img)" [class.d-none]="flag" class="Ms11 position-fixed start-0 top-0  h-100 w-100  d-flex justify-content-center align-items-center bg-primary bg-opacity-25">
+<img #img [src]="Ms11Img" alt="poert1" width="650" class="rounded-4">
+</div>

@@ -1,0 +1,13 @@
+.Isko{
+    opacity: 0;
+    transition: opacity 0.6s;
+    cursor: pointer;
+}
+
+.Modric:hover .Isko{
+    opacity: 1;
+}
+
+img{
+    z-index: 999;
+}

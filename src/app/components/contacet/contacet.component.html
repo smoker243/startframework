@@ -1,0 +1,28 @@
+<section class="vh-90 d-flex flex-column justify-content-center align-items-center">
+
+    <div class="text-center">
+        <app-star [TitleStar]="' contacet component '" [CustomColor]="'#2C3E50'"></app-star>
+    </div>
+
+
+    <form action="" class="w-50 mx-auto">
+        <label for="UserName" class="text-sec my-2 position-relative top-0" [class.hb]="!UserName.length" >UserName:</label>
+        <input type="text" placeholder="UserName" name="UserName" id="UserName" [(ngModel)]="UserName" class="form-control shadow-none border-top-0 border-start-0 border-end-0 position-relative my-2">
+
+        <label for="UserAge" class="text-sec my-2 position-relative top-0" [class.hb]="!UserAge" >UserAge:</label>
+        <input type="number" placeholder="UserAge" name="UserAge" id="UserAge" [(ngModel)]="UserAge" class="form-control shadow-none border-top-0 border-start-0 border-end-0 position-relative my-2">
+
+        <label for="UserEmail" class="text-sec my-2 position-relative top-0" [class.hb]="!UserEmail" >UserEmail:</label>
+        <input type="text" placeholder="UserEmail" name="UserEmail" id="UserEmail" [(ngModel)]="UserEmail" class="form-control shadow-none border-top-0 border-start-0 border-end-0 position-relative my-2">
+
+        <label for="UserPassword" class="text-sec my-2 position-relative top-0" [class.hb]="!UserPassword" >UserPassword:</label>
+        <input type="text" placeholder="UserPassword" name="UserPassword" id="UserPassword" [(ngModel)]="UserPassword" class="form-control shadow-none border-top-0 border-start-0 border-end-0 position-relative my-2">
+    
+    
+<button class="btn-main mt-3">
+SUBMIT
+</button>
+
+    </form>
+
+</section>
